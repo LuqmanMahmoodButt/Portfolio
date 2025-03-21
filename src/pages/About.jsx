@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const About = () => {
   const skills = [
     'HTML', 'CSS', 'JavaScript', 'React', 
-    'TypeScript', 'Git', 'Responsive Design', 'Django'
+    'TypeScript', 'Git', 'Responsive Design', 'Django','node', 'mongoDb', 'Python'
   ];
 
   return (

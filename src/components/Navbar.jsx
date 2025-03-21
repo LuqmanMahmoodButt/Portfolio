@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link 
-              to="/projects" 
+              to="/Projects" 
               className={location.pathname === '/projects' ? 'active' : ''}
               onClick={closeMenu}
             >

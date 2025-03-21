@@ -36,17 +36,6 @@ const Projects = () => {
     <section className="projects" style={{ paddingTop: '100px' }}>
       <div className="container">
         <h1 className="section-title">My Projects</h1>
-        <div className="project-grid">
-          {projects.map(project => (
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imageUrl={project.imageUrl}
-              tags={project.tags}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
