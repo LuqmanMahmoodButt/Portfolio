@@ -5,7 +5,7 @@ const Projects = () => {
   const [projects] = useState([
     {
       id: 1,
-      title: 'Personal Portfolio',
+      title: 'Catch The Spy',
       description: 'A website showcasing my skills and projects.',
       imageUrl: 'portfolio-image.jpg',
       tags: ['React', 'JavaScript', 'CSS'],
