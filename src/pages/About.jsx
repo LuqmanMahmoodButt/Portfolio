@@ -47,11 +47,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Contact Button at the bottom */}
-      <div className="contact-btn">
-        <Link to="/contact" className="btn">Get In Touch</Link>
-      </div>
     </div>
   );
 };

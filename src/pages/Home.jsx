@@ -11,7 +11,6 @@ const Home = () => {
           <p>A frontend developer passionate about creating clean, user-friendly websites and applications.</p>
           <div>
             <Link to="/projects" className="btn">View My Work</Link>
-            <Link to="/contact" className="btn secondary">Contact Me</Link>
           </div>
         </div>
       </section>

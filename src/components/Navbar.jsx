@@ -51,15 +51,6 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
-            <Link 
-              to="/contact" 
-              className={location.pathname === '/contact' ? 'active' : ''}
-              onClick={closeMenu}
-            >
-              Contact
-            </Link>
-          </li>
         </ul>
       </div>
     </nav>
