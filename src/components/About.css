@@ -1,0 +1,112 @@
+/* About Section */
+.about {
+    background-color: #f7fafc;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content to the top */
+    min-height: 100vh; /* Ensures the section takes full height */
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 50px; /* Adds space at the bottom */
+  }
+  
+  /* Section Title at the top */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2b6cb0;
+    margin-bottom: 40px;
+  }
+  
+  /* About Content (Flex Column Layout) */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between sections */
+    align-items: center; /* Centers the content */
+  }
+  
+  /* Who I Am Section */
+  .about-text {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Keeps the text section from becoming too wide */
+  }
+  
+  .about-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills Section */
+  .skills {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px; /* Keeps the skills section from becoming too wide */
+  }
+  
+  .skills h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .skill {
+    background-color: #2b6cb0;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Contact Button at the bottom */
+  .contact-btn {
+    text-align: center;
+    margin-top: auto; /* Pushes the button to the bottom of the page */
+    margin-bottom: 30px; /* Adds space before the button */
+  }
+  
+  .btn {
+    background-color: #3182ce;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #2b6cb0;
+  }

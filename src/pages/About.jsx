@@ -1,47 +1,58 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import '../components/about.css'
 
 const About = () => {
   const skills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 
-    'TypeScript', 'Git', 'Responsive Design', 'Django','node', 'mongoDb', 'Python'
+    "HTML", "CSS", "JavaScript", "React", "TypeScript", "Git", 
+    "Responsive Design", "Django", "Node.js", "MongoDB", "Python"
   ];
 
   return (
-    <section className="about" style={{ paddingTop: '100px' }}>
+    <div className="about">
+
       <div className="container">
-        <h1 className="section-title">About Me</h1>
-        
+        {/* About Content (Flex Column Layout) */}
         <div className="about-content">
+          {/* Who I Am Section */}
           <div className="about-text">
             <h2>Who I Am</h2>
             <p>
-              Hello! I'm Luqman, a frontend developer based in London. 
-              I specialize in building responsive websites and web applications 
-              that provide a great user experience.
+              Hey! I'm Luqman, a frontend developer based in London. I specialize in 
+              crafting sleek, responsive, and high-performing web applications.
             </p>
             <p>
-              With 2 years of experience in web development, I've worked on various 
-              projects ranging from small business websites to complex web applications. 
-              I'm passionate about clean code, accessibility, and modern design.
+              With a background in sales and tech, I transitioned into web development, 
+              completing a rigorous Full Stack Development course at General Assembly. 
+              I also have experience in filmmaking, event management, and leading sales teams. 
+              My ability to blend creativity with technical problem-solving helps me build 
+              engaging digital experiences.
             </p>
-            
-            <div className="skills">
-              <h3>My Skills</h3>
-              <div className="skill-list">
-                {skills.map((skill, index) => (
-                  <span key={index} className="skill">{skill}</span>
-                ))}
-              </div>
-            </div>
-            
-            <div style={{ marginTop: '30px' }}>
-              <Link to="/contact" className="btn">Get In Touch</Link>
+            <p>
+              Before diving into development, I spent years honing my communication 
+              and leadership skills in the sales industry, working with companies like EE 
+              and Virgin Media. This experience shaped my ability to work efficiently in a team, 
+              understand user needs, and develop user-friendly solutions.
+            </p>
+          </div>
+
+          {/* Skills Section */}
+          <div className="skills">
+            <h3>My Skills</h3>
+            <div className="skill-list">
+              {skills.map((skill, index) => (
+                <span key={index} className="skill">{skill}</span>
+              ))}
             </div>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Contact Button at the bottom */}
+      <div className="contact-btn">
+        <Link to="/contact" className="btn">Get In Touch</Link>
+      </div>
+    </div>
   );
 };
 

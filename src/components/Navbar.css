@@ -1,0 +1,90 @@
+/* Navbar Container */
+body {
+    margin-top: 80px; 
+  }
+
+
+.navbar {
+    background: #1e3a5f; /* Dark Blue */
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    color: #facc15; /* Soft Yellow */
+  }
+  
+  /* Mobile Menu */
+  .mobile-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #1e3a5f;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+      text-align: center;
+      display: none;
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    .mobile-toggle {
+      display: block;
+    }
+  }

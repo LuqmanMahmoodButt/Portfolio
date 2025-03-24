@@ -1,0 +1,179 @@
+body {
+  margin-top: 80px; /* Adds space between navbar and content */
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc; /* Light background color */
+  color: #333; /* Text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Projects Page Styles */
+.projects {
+  padding: 80px 20px; /* Space at top and bottom */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #f7fafc;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2b6cb0;
+  margin-bottom: 40px;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.page-text {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.page-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 15px;
+}
+
+.page-text p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Project List Styling */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Added hover effect */
+}
+
+.project-item:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.project-item h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 15px;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.project-btn {
+  background-color: #3182ce;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: #2b6cb0;
+}
+
+/* Additional Project Styles */
+.projects-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.5rem; /* Adjust as needed */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.projects-intro {
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.project-card {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  background-color: #fff;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-title-card {
+  font-size: 1.25rem; /* Adjust as needed */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-tags {
+  font-size: 0.875rem; /* Adjust as needed */
+}
+
+.tags-strong {
+  font-weight: 600;
+}
+
+.projects-contact {
+  margin-top: 30px;
+}

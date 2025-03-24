@@ -1,43 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../components/projects.css'; // Import the CSS file
 
 const Projects = () => {
-  const projects = [
+  const [projects] = useState([
     {
       id: 1,
-      title: 'E-Commerce Website',
-      description: 'A fully responsive e-commerce website with shopping cart functionality.',
-      imageUrl: 'https://via.placeholder.com/300x200',
-      tags: ['React', 'CSS', 'JavaScript']
+      title: 'Personal Portfolio',
+      description: 'A website showcasing my skills and projects.',
+      imageUrl: 'portfolio-image.jpg',
+      tags: ['React', 'JavaScript', 'CSS'],
     },
     {
       id: 2,
-      title: 'Portfolio Template',
-      description: 'A clean, minimalist portfolio template for developers.',
-      imageUrl: 'https://via.placeholder.com/300x200',
-      tags: ['HTML', 'CSS', 'JavaScript']
+      title: 'Task Manager App',
+      description: 'A simple app for managing tasks with CRUD functionality.',
+      imageUrl: 'task-manager-image.jpg', // Replace with your image
+      tags: ['React', 'LocalStorage'],
     },
     {
       id: 3,
-      title: 'Weather App',
-      description: 'A weather application that fetches data from an API.',
-      imageUrl: 'https://via.placeholder.com/300x200',
-      tags: ['React', 'API', 'CSS']
+      title: 'Weather Application',
+      description: 'Displays current weather using an external API.',
+      imageUrl: 'weather-app-image.jpg', // Replace with your image
+      tags: ['React', 'API', 'CSS'],
     },
     {
       id: 4,
-      title: 'Task Management App',
-      description: 'A simple task management application with CRUD operations.',
-      imageUrl: 'https://via.placeholder.com/300x200',
-      tags: ['React', 'JavaScript', 'LocalStorage']
+      title: "E-Commerce Mockup",
+      description: "A front end mockup of an e-commerce website.",
+      imageUrl: "e-commerce-image.jpg", //Replace with your image.
+      tags: ["React", "CSS", "Javascript"]
     }
-  ];
+  ]);
 
   return (
-    <section className="projects" style={{ paddingTop: '100px' }}>
-      <div className="container">
-        <h1 className="section-title">My Projects</h1>
+    <div className="projects-container">
+      <h1 className="projects-title">My Projects</h1>
+      <p className="projects-intro">
+        Welcome! Here, you'll find a selection of projects I've worked on. Each project demonstrates different skills and technologies.
+      </p>
+
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <div key={project.id} className="project-card">
+            {/* <img src={project.imageUrl} alt={project.title} className="project-image" /> */}
+            <h3 className="project-title-card">{project.title}</h3>
+            <p className="project-description">{project.description}</p>
+            <p className="project-tags">
+            </p>
+          </div>
+        ))}
       </div>
-    </section>
+      <p className="projects-contact">
+        Feel free to explore each project. If you have any questions or want to learn more, please don't hesitate to contact me.
+      </p>
+    </div>
   );
 };
 

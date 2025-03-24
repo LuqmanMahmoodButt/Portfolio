@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../components/home.css'
 
 const Home = () => {
   return (
@@ -14,7 +15,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="projects">
         <div className="container">
           <h2 className="section-title">Featured Projects</h2>
@@ -30,7 +31,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="project-card">
               <img src="https://via.placeholder.com/300x200" alt="Project" />
               <div className="project-content">
@@ -43,7 +44,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
+
           <div style={{ textAlign: 'center', marginTop: '30px' }}>
             <Link to="/projects" className="btn">View All Projects</Link>
           </div>
