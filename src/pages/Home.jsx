@@ -22,6 +22,20 @@ const Home = () => {
           </Link>
         </div>
       </section>
+      {/* Skills Section */}
+      <section className="skills">
+        <div className="skills-container">
+          <h2 className="section-heading">Skills</h2>
+          <div className="skills-grid">
+            <span className="skill-badge">React</span>
+            <span className="skill-badge">JavaScript</span>
+            <span className="skill-badge">CSS</span>
+            <span className="skill-badge">HTML</span>
+            <span className="skill-badge">Node.js</span>
+            <span className="skill-badge">APIs</span>
+          </div>
+        </div>
+      </section>
 
       {/* Featured Projects Section */}
       <section className="featured-projects">
@@ -72,6 +86,22 @@ const Home = () => {
             <Link to="/projects" className="btn-secondary">
               View All Projects
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="contact">
+        <div className="contact-container">
+          <h2 className="section-heading">Contact Me</h2>
+          <div className="contact-links">
+            <a href="mailto:your-email@example.com" className="contact-link">Email Me</a>
+            <a href="https://www.linkedin.com/in/your-profile" className="contact-link" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <a href="https://github.com/your-github" className="contact-link" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
           </div>
         </div>
       </section>
